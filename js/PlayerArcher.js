@@ -8,15 +8,11 @@ class PlayerArcher {
       this.width = width;
       this.height = height;
       //this.collapse = false;
-      this.image = loadImage
-      ("./assets/playerArcher.png");
+      this.image = loadImage("./assets/playerArcher.png");
   
       World.add(world, this.body);
   
-      Matter.Body.setAngle(this.body, -PI / 2); 
-      //Matter.Body.setAngle(this.body, -PI ); 
-      //Matter.Body(this.body, -PI ); 
-      //Matter.setAngle(this.body, -PI / 2); 
+      Matter.Body.setAngle(this.body, -PI / 2); // -90 degree
     }
   
     display() {
